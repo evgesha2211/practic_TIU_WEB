@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    text-indent: 1.5em;
+}
+.title {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #f03333;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: #12ac11;
+    text-indent: 1.2em;
+    text-decoration: underline;
+}
+
+.list {
+    font-size: 20px;
+    color: #444;
+    font-style: oblique;
+    list-style: square;
+}
