@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя кулинарная книга - фреймы</title>
+</head>
+
+<frameset cols="150px,*,150px" border="0" framespacing="0" frameborder="0">
+    <!-- Левый декор -->
+    <frame src="side_decor.html" name="left_decor" noresize scrolling="no">
+
+    <frameset rows="120px,*">
+
+        <!-- Header -->
+        <frame src="header.html" name="header" noresize frameborder="0" scrolling="yes">
+
+        <!-- Тело -->
+        <frameset cols="*,250px" border="0" framespacing="0" frameborder="0">
+            <!-- Два фрейма -->
+            <frame src="frame1.html" name="frame1" frameborder="1px" scrolling="auto">
+            <frame src="frame2.html" name="frame2" frameborder="1" scrolling="auto">
+        </frameset>
+    </frameset>
+
+    <!-- Правый декор -->
+    <frame src="side_decor.html" name="right_decor" noresize scrolling="no">
+</frameset>
+</html>
