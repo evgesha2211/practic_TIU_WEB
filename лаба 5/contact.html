@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <h1>Контакты</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="add_recipe.html">Добавить рецепт</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+    </header>
 
+    <form action="#">
+        <label for="email">Ваш email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="subject">Тема:</label>
+        <input type="text" name="subject" id="subject" required>
+
+        <label for="message">Сообщение:</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+
+        <button type="submit">Отправить</button>
+    </form>
 </body>
 </html>
