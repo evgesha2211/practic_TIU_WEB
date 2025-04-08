@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя кулинарная книга</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Моя кулинарная книга</h1>
+        <nav>
+            <a href="index.html">Главная &nbsp;&nbsp;</a>
+            <a href="add_recipe.html">Добавить рецепт&nbsp;&nbsp;</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+    </header>
+
+    <h2>Поиск рецептов</h2>
+    <form action="#" method="get">
+        <label for="q">Ключевое слово: </label>
+        <input type="search" name="q" id="q" placeholder="Название или ингредиенты" required>
+
+        <label for="category">Категории:</label>
+        <select name="category" id="category">
+            <option value="">Все</option>
+            <option>Супы</option>
+            <option>Салаты</option>
+            <option>Выпечка</option>
+            <option>Десерты</option>
+        </select>
+        <button type="submit">Найти</button>
+    </form>
+
+    <h2>Список рецептов</h2>
+    <ul>
+        <li>Борщ</li>
+        <li>Цезарь с курицей</li>
+        <li>Шарлотка</li>
+        <li>Ватрушка по королевски</li>
+        <li>Курица тереяки</li>
+        <li>Бифстроганов</li>
+        <li>Курник</li>
+    </ul>
+</body>
+</html>

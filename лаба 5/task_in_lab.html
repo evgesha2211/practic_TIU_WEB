@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="mail.pl">
+        <p>Ваше первое поле:
+            <input type="text" name="text" size="80" maxlength="6" placeholder="Введите текст">
+        </p>
+    </form>
+    <form action="mail.pl">
+        <p>LF
+            <input type="text" name="text" size="80" maxlength="6" value="Введите текст" disabled>
+        </p>
+    </form>
+    <form action="mail.pl">
+        <p>LF
+            <input type="text" name="text" size="80" maxlength="6" value="Введите текст" readonly>
+
+        </p>
+    </form>
+    <form action="mail.pl">
+        <p>Password
+            <input type="password" name="pass" size="15" maxlength="6">
+        </p>
+    </form>
+    <form action="mail.pl">
+        <p>LF
+            <input type="text" name="text" size="80" maxlength="6" placeholder="Введите текст">
+        </p>
+    </form>
+    <br><br><br>
+
+    <form action="workday.pl">
+        <p>Пожалуйста выберите пять рабочих дней:<br>
+        <input type="checkbox" name="day1" value="mon" checked>Понедельник<br>
+        <input type="checkbox" name="day2" value="tue" checked>Вторник <br>
+        <input type="checkbox" name="day3" value="wed" checked>Среда <br>
+        <input type="checkbox" name="day4" value="thu" checked>Четверг <br>
+        <input type="checkbox" name="day5" value="fri" checked>Пятница <br>
+        <input type="checkbox" name="day6" value="sat">Суббота <br>
+        <input type="checkbox" name="day7" value="sun">Воскресенье <br>
+        </p>
+    </form>
+    <br><br><br>
+
+    <form action="party.pl">
+        <p>Выбор ток одного из всех <br>
+            <input type="radio" name="party" value="go" checked>Пойти на вечеринку <br>
+            <input type="radio" name="party" value="nogo"> Провести вечер у телевизора <br>
+            <input type="radio" name="party" value="the">Пойти в театр <br>
+            <input type="radio" name="party" value="cin"> Выучить математический анализ <br>
+        </p>
+    </form>
+    <br><br><br>
+
+    <form action="mail.pl">
+        <input type="submit" name=" submit" value="Отправить">
+    </form>
+    <br><br><br>
+
+    <font color="#9932cc" size="6" fase="arial">
+        <form action="mail.pl">
+            <input type="image" name="but" src="" align="bottom">
+        </form>
+    </font>
+    <br><br><br>
+
+    <form action="hadits.pl">
+        <p>Пожалуйста, введите ваше имя:
+            <input type="text" name="text" size="80" maxlength="20" value="Ваше имя:">
+        </p>
+        <p>Пожалуйста, выберите привычки, которые считаете полезными для здоровья: <br>
+            <input type="checkbox" name="healthy1" value="run" checked>Бегать по утрам<br>
+            <input type="checkbox" name="healthy2" value="smoke">курить<br>
+            <input type="checkbox" name="healthy3" value="drink">Пить спиртные напитки<br>
+            <input type="checkbox" name="healthy4" value="food" checked>здоровое питание<br>
+            <input type="checkbox" name="healthy5" value="food2">еда ночью<br>
+            <input type="checkbox" name="healthy6" value="smile" checked>хорошее настроение позитивный настрой<br>
+            <input type="checkbox" name="healthy7" value="sit">малоподвижный образ жизни<br>
+        </p>
+        <input type="reset" name="reset" value="очистить">
+    </form>
+    <br><br><br>
+
+    <form enctype="multipart/form-data" method="post">
+        Пожалуйста выберите файл для загрузки
+        <input type="file" name="load" size="30">
+    </form>
+    <br><br><br>
+
+    Пожалуйста, оставьте отзыв о нашей компании
+    <p>
+        <textarea cols="40" rows="5" name="message" wrap="virtual"></textarea>
+    </p>
+    <br><br><br>
+
+    <select name="month" size="1">
+    <option value="none"> - Выберите месяц - </option>
+    <optgroup label="Зима">
+        <option value="dec">Декабрь</option>
+        <option value="jan">Январь</option>
+        <option value="feb">Февраль</option>
+    </optgroup>
+    <optgroup label="Весна">
+        <option value="mar">Март</option>
+        <option value="apr">Апрель</option>
+        <option value="may">Май</option>
+    </optgroup>
+    <optgroup label="Лето">
+        <option value="jun">Июнь</option>
+        <option value="jul">Июль</option>
+        <option value="aug">Август</option>
+    </optgroup>
+    <optgroup label="Осень">
+        <option value="sep">Сентябрь</option>
+        <option value="oct">Октябрь</option>
+        <option value="nov">Ноябрь</option>
+    </optgroup>
+    </select>
+    <br><br><br>
+
+    <button type="button">Сделано всё </button>
+</body>
+</html>

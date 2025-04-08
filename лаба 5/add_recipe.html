@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить рецепт</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Добавить рецепт</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="add_recipe.html">Добавить рецепт</a>
+            <a href="contact.html">Контакты</a>
+        </nav>
+    </header>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Основная информация</legend>
+            <label for="title">Название рецепта:</label>
+            <input type="text" name="title" id="title">
+
+            <label for="description">Краткое описание:</label>
+            <textarea name="description" id="description" rows="3"></textarea>
+
+            <p>Категории</p>
+            <label><input type="radio" name="category" value="Суп">Суп</label>
+            <label><input type="radio" name="category" value="Салат">Салат</label>
+            <label><input type="radio" name="category" value="Выпечка">Выпечка</label>
+            <label><input type="radio" name="category" value="Десерт">Десерт</label>
+
+            <label><input type="checkbox" name="vegatetian">Вегатерианский</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Ингредиенты и процесс</legend>
+
+            <label for="ingredients">Ингридиенты:</label>
+            <textarea name="ingredients" id="ingredients" rows="5" required></textarea>
+
+            <label for="instruction">Пошаговая инструкция:</label>
+            <textarea name="instruction" id="instruction" rows="7" required></textarea>
+
+            <label for="time">Время приготовления:</label>
+            <input type="number" name="time" id="time" min="1" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Медиа</legend>
+
+            <label for="photo">Загрузить фото:</label>
+            <input type="file" name="photo" id="photo" accept="image/*">
+        </fieldset>
+
+        <button type="submit">Сохранить рецепт</button>
+    </form>
+</body>
+</html>
